@@ -1,24 +1,32 @@
 FROM ubuntu:xenial
 
 RUN apt-get update && apt-get install -yq \
-    autoconf-archive \
-    bison \
-    build-essential \
-    cmake \
-    curl \
-    flex \
     git \
-    gperf \
-    libcap-dev \
-    libevent-dev \
-    libgoogle-glog-dev \
+    cmake \
+    g++ \
+    flex \
+    bison \
     libkrb5-dev \
-    libnuma-dev \
     libsasl2-dev \
-    libssl-dev \
+    libnuma-dev \
     pkg-config \
-    sudo \
-    unzip \
-    wget
+    libssl-dev \
+    libcap-dev \
+    gperf \
+    autoconf-archive \
+    libevent-dev \
+    libtool \
+    libboost-all-dev \
+    libjemalloc-dev \
+    libsnappy-dev \
+    wget \
+    \
+    google-mock \
+    libgoogle-glog0v5 \
+    libgtest-dev \
+    \
+    libgoogle-glog-dev \
+    libgflags-dev \
+    libdouble-conversion-dev
 
 CMD ["/bin/bash"]
