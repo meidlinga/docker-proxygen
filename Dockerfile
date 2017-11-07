@@ -1,6 +1,7 @@
 FROM ubuntu:xenial
 
 RUN apt-get update && apt-get install -yq \
+    sudo \
     git \
     cmake \
     g++ \
